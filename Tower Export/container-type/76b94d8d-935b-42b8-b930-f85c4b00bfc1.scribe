@@ -1,0 +1,16 @@
+resource "container-type" "76b94d8d-935b-42b8-b930-f85c4b00bfc1" {
+  code = "76b94d8d-935b-42b8-b930-f85c4b00bfc1"
+  name = "ubuntu"
+  uuid = "a390fa3f-9dce-4038-8ce8-a90965cc7c52"
+  containerVersion = "20.04"
+  labels = [ "64269" ]
+  logTypeCode = "vm"
+  provisionType = { code = "vmware" }
+  serverType = "vm"
+  shortName = "ubuntu"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = {
+    code = "vmware.vsphere.image.morpheus.ubuntu.20.04.4-v2.ubuntu.20.04.4.amd64"
+  }
+}
