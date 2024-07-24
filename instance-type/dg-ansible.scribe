@@ -1,0 +1,8 @@
+resource "instance-type" "dg-ansible" {
+  code = "dg-ansible"
+  name = "DG_Ansible"
+  uuid = "22a444b1-af37-4adf-bc26-d3b490df62a2"
+  category = "web"
+  environmentPrefix = "DG_ANSIBLE"
+  labels = [ "64269" ]
+}
