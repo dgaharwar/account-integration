@@ -5,4 +5,5 @@ resource "instance-type" "dg-ansible" {
   category = "web"
   environmentPrefix = "DG_ANSIBLE"
   labels = [ "64269" ]
+  layouts = [ { code = "a370b5ab-551e-40e6-98df-a7f5e7b6f5b0" } ]
 }
