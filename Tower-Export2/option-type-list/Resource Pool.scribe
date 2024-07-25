@@ -1,0 +1,22 @@
+resource "option-type-list" "Resource Pool" {
+  name = "Resource Pool"
+  uuid = "e86b4a0d-ab3a-4c65-acb9-d67dac96f67b"
+  apiType = "resourcePools"
+  realTime = true
+  requestScript = <<EOFSCRIBE
+if (input.dgGroup && input.dgCloud) {
+  results.siteId = input.dgGroup
+  results.zoneId = input.dgCloud
+  results.groupId = input.dgGroup
+  results.cloudId = input.dgCloud
+}
+EOFSCRIBE
+  translationScript = <<EOFSCRIBE
+if (input.dgGroup && input.dgCloud) {
+  for(var x=0;x < data.length; x++) {
+   results.push({name: data[x].name,value:data[x].id});
+  }
+}
+EOFSCRIBE
+  type = "api"
+}
