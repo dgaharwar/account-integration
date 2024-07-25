@@ -1,0 +1,4 @@
+resource "task-set-task" "0e66fa61-42f5-4534-81f2-a6edb63bba17" {
+  uuid = "0e66fa61-42f5-4534-81f2-a6edb63bba17"
+  task = { name = "DG-HelloWorld" }
+}

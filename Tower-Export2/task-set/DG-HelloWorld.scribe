@@ -1,0 +1,8 @@
+resource "task-set" "DG-HelloWorld" {
+  name = "DG-HelloWorld"
+  uuid = "2edab8d2-91a4-4ebc-8a2b-5d9066c9bf5a"
+  dateCreated = "2024-07-24T17:10:40.000Z"
+  labels = [ "64269" ]
+  lastUpdated = "2024-07-24T17:40:43.000Z"
+  taskSetTasks = [ { uuid = "0e66fa61-42f5-4534-81f2-a6edb63bba17" } ]
+}
