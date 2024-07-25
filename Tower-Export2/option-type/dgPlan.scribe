@@ -1,0 +1,11 @@
+resource "option-type" "dgPlan" {
+  code = "dgPlan"
+  name = "Plans"
+  uuid = "2ca0641d-e08f-4b4b-b593-7644db931c46"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Plans"
+  fieldName = "dgPlan"
+  optionList = { name = "Plans" }
+  optionSource = "list"
+  type = "select"
+}
