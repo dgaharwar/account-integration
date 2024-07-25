@@ -1,0 +1,153 @@
+resource "option-type-form" "dg206523" {
+  code = "dg206523"
+  name = "dg206523"
+  uuid = "f5106d2e-2995-4372-be14-5c2bcc539d50"
+  config = {
+    enableVar = false
+    form = ""
+    formField = ""
+    formOptions = ""
+    formType = "static"
+  }
+  options = [
+    {
+      code = "dgGroup"
+      name = "Group"
+      uuid = "4f1ae461-6fea-4279-97c7-2028ba4d2c15"
+      fieldContext = "config.customOptions"
+      fieldLabel = "Group"
+      fieldName = "dgGroup"
+      optionList = { name = "Group" }
+      optionSource = "list"
+      type = "select"
+    },
+    {
+      code = "c92d38dd-aa7c-487a-bd2c-2310215bd3a3"
+      name = "c92d38dd-aa7c-487a-bd2c-2310215bd3a3"
+      uuid = "c6acbba5-8b68-4903-b769-19897912f3b7"
+      config = {
+        cloudType = ""
+        filterResource = false
+        group = 2260
+        groupFieldType = "field"
+        groupId = ""
+        instanceTypeCode = "ubuntu"
+        instanceTypeFieldCode = null
+        instanceTypeFieldType = "value"
+      }
+      displayOrder = 1
+      fieldContext = "config.customOptions"
+      fieldLabel = "Cloud"
+      fieldName = "dgCloud"
+      formField = true
+      type = "cloud"
+    },
+    {
+      code = "f7422ff8-9cd5-4d03-8f11-cd4ed56ad654"
+      name = "f7422ff8-9cd5-4d03-8f11-cd4ed56ad654"
+      uuid = "e4083edc-137b-4032-80b3-5b135bfec8d3"
+      config = {
+        cloudField = "c92d38dd-aa7c-487a-bd2c-2310215bd3a3"
+        cloudFieldType = "field"
+        cloudId = ""
+        groupField = 2260
+        groupFieldType = "field"
+        groupId = ""
+        instanceTypeCode = "ubuntu"
+        instanceTypeFieldCode = null
+        instanceTypeFieldType = "value"
+      }
+      displayOrder = 2
+      fieldContext = "config.customOptions"
+      fieldLabel = "Layout"
+      fieldName = "dgLayout"
+      formField = true
+      type = "layout"
+    },
+    {
+      code = "dgPlan"
+      name = "Plans"
+      uuid = "2ca0641d-e08f-4b4b-b593-7644db931c46"
+      fieldContext = "config.customOptions"
+      fieldLabel = "Plans"
+      fieldName = "dgPlan"
+      optionList = { name = "Plans" }
+      optionSource = "list"
+      type = "select"
+    },
+    {
+      code = "dgResourcePool"
+      name = "Resource Pool"
+      uuid = "806235f1-4d62-4ed9-85dc-58c125cced8f"
+      fieldContext = "config.customOptions"
+      fieldLabel = "Resource Pool"
+      fieldName = "dgResourcePool"
+      optionList = { name = "Resource Pool" }
+      optionSource = "list"
+      type = "select"
+    },
+    {
+      code = "e7653e6b-5195-4c65-a5ed-7f4cc9736ba4"
+      name = "e7653e6b-5195-4c65-a5ed-7f4cc9736ba4"
+      uuid = "46e1ef78-d998-4b0b-8a64-c3b7291d47bc"
+      config = {
+        cloudField = "c92d38dd-aa7c-487a-bd2c-2310215bd3a3"
+        cloudFieldType = "field"
+        cloudId = ""
+        defaultValue = ""
+        enableIPModeSelection = true
+        groupField = 2260
+        groupFieldType = "field"
+        groupId = ""
+        layoutField = "f7422ff8-9cd5-4d03-8f11-cd4ed56ad654"
+        layoutFieldType = "field"
+        layoutId = ""
+        poolField = 2261
+        poolFieldType = "field"
+        poolId = ""
+        showNetworkTypeSelection = true
+      }
+      displayOrder = 5
+      fieldContext = "config.customOptions"
+      fieldLabel = "Network"
+      fieldName = "dgNetwork"
+      formField = true
+      type = "networkManager"
+    },
+    {
+      code = "c82ffc2c-ae88-4c75-b7c1-e12fa9794605"
+      name = "c82ffc2c-ae88-4c75-b7c1-e12fa9794605"
+      uuid = "2503d96e-cac3-49b8-b011-7c593dbbf67d"
+      config = {
+        cloudField = "c92d38dd-aa7c-487a-bd2c-2310215bd3a3"
+        cloudFieldType = "field"
+        cloudId = ""
+        defaultValue = ""
+        enableDatastoreSelection = false
+        enableDiskTypeSelection = false
+        enableStorageTypeSelection = false
+        groupField = 2260
+        groupFieldType = "field"
+        groupId = ""
+        imageField = ""
+        imageId = ""
+        layoutField = "f7422ff8-9cd5-4d03-8f11-cd4ed56ad654"
+        layoutFieldType = "field"
+        layoutId = ""
+        planField = 2262
+        planFieldType = "field"
+        planId = ""
+        poolField = ""
+        poolFieldType = "field"
+        poolId = ""
+        virtualImageFieldType = "field"
+      }
+      displayOrder = 6
+      fieldContext = "config.customOptions"
+      fieldLabel = "Disk"
+      fieldName = "Disk"
+      formField = true
+      type = "diskManager"
+    }
+  ]
+}
