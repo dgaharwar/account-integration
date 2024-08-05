@@ -1,0 +1,8 @@
+resource "task-set" "Ansible Tower Workflow 704" {
+  name = "Ansible Tower Workflow 704"
+  uuid = "dde204ce-6ca9-49bc-a805-eec5dd7f9e05"
+  dateCreated = "2024-08-05T19:06:19.000Z"
+  labels = [ "ansibleTask" ]
+  lastUpdated = "2024-08-05T19:06:19.000Z"
+  taskSetTasks = [ { uuid = "c30c5a42-6ba8-498c-bf86-35cdba2a5143" } ]
+}
