@@ -1,0 +1,5 @@
+resource "task-set-task" "c30c5a42-6ba8-498c-bf86-35cdba2a5143" {
+  uuid = "c30c5a42-6ba8-498c-bf86-35cdba2a5143"
+  task = { name = "Ansible Task 704" }
+  taskPhase = "provision"
+}

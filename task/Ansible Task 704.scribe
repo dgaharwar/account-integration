@@ -1,0 +1,24 @@
+resource "task" "Ansible Task 704" {
+  name = "Ansible Task 704"
+  uuid = "1e73c8a2-3a84-4712-ad07-cbb39ab58374"
+  dateCreated = "2024-08-05T19:03:39.000Z"
+  executeTarget = "resource"
+  labels = [ "ansibleTask" ]
+  lastUpdated = "2024-08-05T19:04:17.000Z"
+  options = [
+    {
+      optionType = { code = "ansibleTowerIntegrationId" }
+      value = { name = "Ansible Tower" }
+    },
+    {
+      optionType = { code = "ansibleTowerJobTemplateId" }
+      value = { code = "ansibleTower.jobTemplate.1.51" }
+    },
+    { optionType = { code = "ansibleTowerInventoryId" }, value = "4" },
+    {
+      optionType = { code = "ansibleTowerExecuteMode" }
+      value = "executeHost"
+    }
+  ]
+  taskType = { code = "ansibleTowerTask" }
+}
