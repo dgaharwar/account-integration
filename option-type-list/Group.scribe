@@ -1,7 +1,0 @@
-resource "option-type-list" "Group" {
-  name = "Group"
-  uuid = "0552a927-f476-47df-8969-2ad2c802fbf0"
-  apiType = "groups"
-  realTime = true
-  type = "api"
-}
