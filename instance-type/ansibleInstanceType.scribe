@@ -6,4 +6,5 @@ resource "instance-type" "ansibleInstanceType" {
   deploymentService = ""
   environmentPrefix = "ANSIBLE_INSTANCE_TYPE"
   labels = [ "ansibleTask" ]
+  layouts = [ { code = "baf21ba8-b772-46be-aa54-987927e9dc1d" } ]
 }
